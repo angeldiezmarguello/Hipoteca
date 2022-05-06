@@ -1,1 +1,30 @@
+body{
 
+font-family: 'Quicksand',sans-serif;
+background-image:url('../imagenes/ladrillo3.jpg');
+background-position:center;
+background-size:cover;
+background-repeat: no-repeat;
+height:100%;
+}
+
+
+
+h1,h2,h3{
+
+  font-family: 'Bebas Neue', cursive;
+
+
+
+
+}
+
+
+.fotoCasa {
+
+margin-left: 20%;
+width:400px;
+
+
+
+}
