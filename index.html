@@ -29,20 +29,24 @@ crossorigin="anonymous">
 
 
 <h1>CALCULADORA "HIPOTECA"</h1>
-
-<p>Averigua cuanto pagarás cada mes .Introduce el tipo vivienda...................................................................................................................</p>
-
+<br>
+<b>Averigua cuanto pagarás cada mes.Introduce el tipo vivienda que deseas comprar y en cuantos años la quieres pagar.</b>
+<br><br>
 
 <div class="row">
 
-  <div class="col-lg-6">
+  <div class="col-lg-4">
+<div class="form-group">
+
 
 <!-- formulario -->
-<form class="" action="/" method="post">
+<form id="formulario" class="" action="/" method="post">
 
-<label for="">Tipo Vivienda</label>
+<label class="form-label" for="">Tipo Vivienda</label>
 
 <select class="form-select" name="tipoVivienda">
+
+<option value="...">...</option>
 
   <option value="piso">Piso</option>
 
@@ -51,21 +55,62 @@ crossorigin="anonymous">
       <option value="duplex">Duplex</option>
 
 </select>
+
+</div>
 <!-- ************************************************************************ -->
 <br><br>
+<div class="form-group">
 
-<label for="">Años</label>
+
+<label class="from-label" for="">Años hipoteca</label>
 <br>
-<select class="form-group" name="annos">
+<select class="form-select" name="annos">
 
-  <option value="20 años">20 años</option>
+  <option value="...">...</option>
 
-    <option value="25 años">25 años</option>
+  <option value="20">20 años</option>
 
-      <option value="30 años">30 años</option>
+    <option value="25">25 años</option>
+
+      <option value="30">30 años</option>
 
 </select>
 
+</div>
+
+
+<!-- ******************************************************************** -->
+<br><br>
+
+<div class="form-group">
+
+
+<!-- formulario -->
+<form id="formulario" class="" action="/" method="post">
+
+<label class="form-label" for="">Interés Nominal Mensual</label>
+
+<select class="form-select" name="interes">
+
+
+<option value="...">...</option>
+
+  <option value="0.0012">0.12%</option>
+
+    <option value="0.0025">0.25%</option>
+
+      <option value="0.003">0.30%</option>
+
+</select>
+
+</div>
+
+
+
+
+
+
+
 
 
 
@@ -73,7 +118,9 @@ crossorigin="anonymous">
 <br><br>
 
 
-<button id="botonEnviar" class="btn btn-lg btn-danger mt-4" type="button" name="button">CALCULAR</button>
+<button  id= botonEnviar class="botonEnviar btn btn-lg btn-danger mt-5" type="button" name="">CALCULAR</button>
+
+<!-- tipo button en vez de submit -->
 
   </div>
 
@@ -89,10 +136,10 @@ crossorigin="anonymous">
 
 
 
-  <div class="col-lg-6 text-center">
+  <div class="col-lg-8 text-center">
 
 <!-- foto -->
-<img class="fotoCasa" src="imagenes/piso.jpg" alt="">
+<img class="fotoCasa" src="imagenes/interrogante.jpg" alt="">
 
 
   <!-- <input type="submit"  class="btn" name="" value=""> -->
@@ -137,7 +184,7 @@ crossorigin="anonymous">
      crossorigin="anonymous"></script>
 
      <!-- **************enlace javascript******************************* -->
-    <script src="javascript.js" charset="utf-8"></script>
+    <script src="js/javascript.js" charset="utf-8"></script>
     <!-- ************************************************************ -->
   </body>
 </html>
